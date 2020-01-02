@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: cloud-consumer-user-feign
+
+server:
+  port: 7000
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true #注册中心保存我的ip
